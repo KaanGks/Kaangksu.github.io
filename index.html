@@ -2,146 +2,188 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <title>Kaan Göksu</title>
+    <title>Portfolyo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <style>
-    #img-header{
-        border-radius: 10px;
-        width: 650px;
-        height: 250px;
-        
-        bottom: 404px;
-        right: 464px;
-        
-        
-    }
-    #box-img{
-        
-        bottom:100px;
-        right: 350px;
-    }
-    #img-Main{
-        
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        margin: -120px 220px;
-        border-radius: 50%;
-        
-    }
-    #button-design{
-        border-radius: 10px;
-        border-color: antiquewhite;
-        border: 0px;
-        width: 150px;
-        height: 50px;
-        margin: 10px 250px;
-        background-color:antiquewhite;
-        
-        font-size: 20px;
+    *
+    {
+        box-sizing: border-box;
     }
     
-    h1{
-        color:cornflowerblue;
-        text-align: center;
-    }
-
-    ul{
-        padding: 40px 500px;
-        text-align: center;
-        margin:0;
-    }
- 
-    li
+    body
     {
-        display: inline-block;
-        margin:0px 50px;
-        
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Lato', sans-serif;
     }
 
-    #box-Header{
-        height: 100px;
-        background-color: cornflowerblue;
+    .main-header {
+            background-color: white;
+            padding: 8px 16px;
+        }
 
-    }
-    #box-Main{
-        
-        border-radius: 10px;
-        margin: 3% 30% ;
-        background-color: aliceblue;
-        width: 650px;
-        height: 700px;
-        
-        
-    }
+        .main-nav {
+            display: inline-block;
+            width: calc(100% - 101px);
+            text-align: right;
+            font-family: 'Roboto', sans-serif;
+        }
+        .main-nav__items {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
 
-   body{
-        margin: 0px;
-        padding: 0px;
-        background-size: cover;
-        background-image: url(C-cBiNsXkAAuY1v.jpeg);
-        background-repeat: no-repeat;      
-    }
-    p{
-        color: cornflowerblue;
-        text-align: center;
-        font-size: large;
-        font-style:italic;
-    }
-    h2{
-        color: cornflowerblue;
-        text-align: center;
-    }
-    h3{
-        color: cornflowerblue;
-        text-align: center;
-    }
-    #a-ttmtal{
-        color: cornflowerblue;
-    }   
-    #a-indir{
-        text-decoration: none;
-        color: cornflowerblue;
-    }
+        .main-nav__item {
+            display: inline-block;
+            margin: 0 10px;
+        }
 
+        .main-header__logo {
+            color: #2E4C6D;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .main-nav__item a {
+            text-decoration: none;
+            color: #2E4C6D;
+        }
+
+        .main-nav__item a:hover, .main-nav__item:hover::before {
+            color: gray;
+        }      
+
+        .main-nav__item:active::before, .main-nav__item a:active {
+            color: Gray;
+        }
+
+        .main-nav__item::before {
+            content: '\2022';
+            color: #2E4C6D;
+        }
+
+        .main-nav__item--login a {
+            color: white;
+            background-color: #2E4C6D;
+            padding: 4px 16px;
+            border-radius: 8px;
+            border: 2px solid #2E4C6D;
+        }
+
+        .main-nav__item--login a:hover, .information a:hover {
+            color: #2E4C6D;
+            border: 2px solid #2E4C6D;
+            background-color: #fff;
+        }
+
+        .main-nav__item--login::before {
+            content:none;
+        }
+
+        .row
+        {
+            margin-left: 15%;
+            margin-top: 10%;
+            display: inline-block;
+            
+            
+            
+        }
+
+        .col-contact_ a
+        {
+            text-decoration: none;
+        }
+
+        .col-contact_ i:hover
+        {
+            color: white;
+            background-color: #2E4C6D;
+        }
+
+        .col-contact_ i:active
+        {
+            color: #2E4C6D;
+        }
+        .information
+        {
+            
+            color: #2E4C6D;
+            width: 600px;
+        }
+
+
+
+        .col-contact
+        {
+            margin: 10px;
+            padding: 5px 5px;
+            display: block;
+            color: #2E4C6D;
+            text-align: center;
+            border: 2px solid #2E4C6D;
+            border-radius: 100%;
+        }
+
+        .information a
+        {
+            background-color: #2E4C6D;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid white;
+            margin-top: 15px;
+        }
+      
+        .warning 
+        {
+            color: #2E4C6D;
+            margin: 20% 28%;
+        }
+    
 </style>
 <body>
-    <header>
-        <div id="box-Header">
-            <ul>
-                <li><a href="https://www.instagram.com/kaan_gksu/"><i class='fab fa-instagram' style='font-size:36px'></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCxhiB7sMB2_l37R3SFf_szA"><i class='fab fa-youtube' style='font-size:36px'></i></a></li>
-                <li><a href="https://github.com/KaanGks"><i class='fab fa-github' style='font-size:36px'></i></a></li>
+    <header class="main-header">
+        <a href="#" class="main-header__logo">Hakkımda</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">About</a>
+                </li>
+                <li class="main-nav__item main-nav__item--login">
+                    <a href="#">Home</a>
+                </li>
             </ul>
+        </nav>
+    </header>   
+
+    <main>
+        <div class="col">
+            <div class="row col-contact_">
+                <a href=""><i class='fab fa-instagram col-contact' style='font-size:36px'></i></a>
+                <a href=""><i class='fab fa-youtube col-contact' style='font-size:36px'></i></a>
+                <a href=""><i class='fab fa-github col-contact' style='font-size:36px'></i></a>
+            </div><div class="row information" >
+                <h3>Hi it's Me</h3>
+                <h2>Merhaba Ben Kaan</h2>
+                <p>2 Seneye Yakındır Yazılım ile ilginmekte,C# Forms Html/Css Python dillerinde deneyim sahibi</p>
+                <a href="#">Download Cv</a>
         </div>
-    </header>
-    <div id="box-Main">
-        
-        <img id="img-header" src="computer.jpeg" alt="Resim"> 
-        <div><img id="img-Main"src="IMG_20220619_204055_178.jpg" alt="Kaan Göksu"></div>
-        
-        <br><br><br><br>
-        <h1>Kaan Göksu</h1>        
-        <h2>Bilgiler</h2>
-        <br>
-        <p>
-            <strong><a id="a-ttmtal" href="https://turktelekomatl.meb.k12.tr/">TTMTAL</a></strong> Lisesinde 2.Sınıf Öğrencisi
-        </p>
-        <p>1.5 Seneye Yakındır Yazılım ile ilginmekte
-            C# Forms <strong>/</strong> Html/Css <strong>/</strong> Python 
-            dillerinde deneyim sahibi
-        </p>
-        <h3>Kim Milyoner Olmak İster Uygulama İndir</h3>    
-        <button type="button" id="button-design"><a id="a-indir"href="Kim Milyoner Olmak İster.rar" download>İndir</a></button>
-        
-    </div>
-    
-     
-    
-    
-    
+        <div class="warning">
+            <h3>Sayfa Şuanda Tam halinde değildir sayfa yenilendiğinde Güncellenecektir!</h3>
+        </div>
+    </main>
 </body>
 </html>
