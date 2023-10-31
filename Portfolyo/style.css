@@ -95,7 +95,7 @@ body
 .section-image img
 {
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
     
 }
 
@@ -130,26 +130,40 @@ body
 
     .index-main
     {
-        height: 100vh;
+        flex-direction: column-reverse;
         align-items: center;
+        justify-content:stretch;
         padding: 0;
+        height: 100vh;
         
     }
 
     .main-aside-head
     {
+        margin-top: 10px;
         font-size: 1.5em;
     }
 
     .main-section
     {
-        display: none;
+        
+        width: 50%;
+    }
+
+    .section-image img 
+    {
+        width: 100%;
     }
     
+    
+    .section-image 
+    {
+        width: 100%;
+    }
 
     .main-aside
     {
-        padding: 50px;
+        padding: 50px 50px;
     }
 
     .main-aside-section p ,.main-aside-section a
