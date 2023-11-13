@@ -1,0 +1,154 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color: #5C8374;
+}
+.main-header
+{
+    width: 100%;
+    padding: 10px 20px;
+    background-color:#183D3D;
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 2em; 
+}
+
+.main-nav-items
+{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.main-nav-item
+{
+    padding: 10px 20px;
+    font-size: 0.7em;
+}
+
+.main-header a
+{
+    
+    color: #fff;
+    text-decoration: none;
+}
+
+.index-main
+{
+    background-color: #5C8374;
+    display: flex;
+    justify-content: space-around;
+    
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    padding: 0px 50px;
+    gap: 10%;
+}
+
+.main-aside-section p
+{
+    margin: 50px 0px;
+    font-size: 1.5em;
+}
+
+.main-aside-section a
+{
+    font-size: 1.5em;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-aside
+{
+    color: #fff;
+    
+}
+
+
+.main-aside-head
+{
+    
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+}
+
+.main-section
+{
+    width:100%;
+}
+.section-image 
+{
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('Resimler/IMG_0003.JPEG'); 
+}
+
+
+.main-nav-item:first-child
+{
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+
+    .main-nav-item:first-child
+    {
+        display: block;
+    }
+
+    .main-nav-item
+    {
+        display: none;
+    }
+
+    .responsive .main-nav-item
+    {
+        display: block;
+    }
+
+    .responsive .main-nav-items
+    {
+        
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .index-main
+    {
+        flex-direction: column-reverse;
+        font-size: 0.8em;
+        padding: 0;
+        align-items: center;
+        
+        width: 100%;
+    }
+
+    .section-image 
+    {
+        border-radius: 10px;
+        width: 310px;
+        height: 310px;
+        
+    }
+
+    .main-aside
+    {
+        padding: 0px 30px;
+    }
+}
