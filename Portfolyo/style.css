@@ -7,6 +7,7 @@ body
 {
     padding: 0;
     margin: 0;
+    background-color: #5C8374;
 }
 .main-header
 {
@@ -45,10 +46,13 @@ body
 {
     background-color: #5C8374;
     display: flex;
-    justify-content: space-between;
-    height:auto;
+    justify-content: space-around;
+    
+    width: 100%;
+    height: 100vh;
     align-items: center;
-    padding: 100px 50px;
+    padding: 0px 50px;
+    gap: 10%;
 }
 
 .main-aside-section p
@@ -69,7 +73,7 @@ body
 .main-aside
 {
     color: #fff;
-    padding: 0px 200px 0px 0px;
+    
 }
 
 
@@ -86,25 +90,20 @@ body
 .section-image 
 {
     border-radius: 10px;
-    width: 510px;
-    height: 100%;
-    
-    /* background-image: url('Resimler/IMG_0003.JPEG'); */
+    width: 500px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('Resimler/IMG_0003.JPEG'); 
 }
 
-.section-image img
-{
-    border-radius: 10px;
-    width: 100%;
-    
-}
 
 .main-nav-item:first-child
 {
     display: none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:500px) {
 
     .main-nav-item:first-child
     {
@@ -131,43 +130,23 @@ body
     .index-main
     {
         flex-direction: column-reverse;
-        align-items: center;
-        justify-content:stretch;
+        font-size: 0.8em;
         padding: 0;
-        height: 100vh;
+        align-items: center;
         
-    }
-
-    .main-aside-head
-    {
-        margin-top: 10px;
-        font-size: 1.5em;
-    }
-
-    .main-section
-    {
-        
-        width: 50%;
-    }
-
-    .section-image img 
-    {
         width: 100%;
     }
-    
-    
+
     .section-image 
     {
-        width: 100%;
+        border-radius: 10px;
+        width: 310px;
+        height: 310px;
+        
     }
 
     .main-aside
     {
-        padding: 50px 50px;
-    }
-
-    .main-aside-section p ,.main-aside-section a
-    {
-        font-size: 1em;
+        padding: 0px 30px;
     }
 }
